@@ -15,6 +15,7 @@ public class LoginController {
     @Autowired
     private FeignService feignService;
     @GetMapping(value = "/hi", produces = {"text/plain;charset=UTF-8"})
+    
     //@PreAuthorize("hasAuthority('p2')")  //方法授权,不知道为什么 再websecirotuConfig中设置不好用
     public  String r1(){
         return "/的页面";
